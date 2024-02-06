@@ -127,13 +127,19 @@ ul {
 .head-preview-block {
   display: flex;
   align-items: flex-start;
+  gap: 60px;
   margin-top: 124px;
+  background-image: url("../assets/images/backgrounds/star_purple.png");
+  background-repeat: no-repeat;
+  background-position: 37% 40%;
 }
 
 .head-preview-block_title__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
   min-width: 738px;
   word-wrap: break-word;
-  position: relative;
 }
 
 .head-preview-block_title {
@@ -144,11 +150,10 @@ ul {
 }
 
 .head-preview-block_summary {
-  max-width: 353px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 26px;
+  align-self: flex-end;
+  margin-right: -25%;
+  max-width: 35.3rem;
+  font-size: 2.6rem;
   line-height: 124%;
   color: #fd9db6;
 }
@@ -178,11 +183,19 @@ ul {
   height: auto;
 }
 
+.head-preview-devider {
+  margin-top: 10px;
+  background-image: url("../assets/images/backgrounds/star_yellow.png");
+  background-repeat: no-repeat;
+  background-position: 85% 15%;
+}
+
 .summary {
   display: flex;
   align-items: flex-start;
   gap: 64px;
   padding: 0 60px;
+  margin-top: 140px;
   margin-bottom: 100px;
 }
 
@@ -316,6 +329,7 @@ ul {
   text-transform: uppercase;
   border-radius: 50px;
   border: 1px solid #ffffff;
+  white-space: nowrap;
 }
 
 .content-examples_item__tags-square {
@@ -581,7 +595,34 @@ ul {
   gap: 20px;
   border-radius: 20px;
   background-color: #202020;
-  padding: 34px 20px;
+  padding: 34px 42px 44px 20px;
+}
+
+.courses-item-additional__hidden {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courses-item_button {
+  padding: 8px 18px;
+  color: #ffffff;
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+
+.courses-item_button:hover {
+  cursor: pointer;
+}
+
+.courses-item:hover {
+  background-color: #566efa;
+}
+
+.courses-item:hover .courses-item-additional__hidden {
+  visibility: visible;
 }
 
 .page-section_content-achives {
@@ -703,6 +744,7 @@ ul {
       498px
     );
   grid-template-rows: repeat(4, 247px);
+  gap: 4px;
 }
 
 .page-links_item {
